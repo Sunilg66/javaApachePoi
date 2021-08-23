@@ -15,7 +15,7 @@ public class WriteDataToExcel {
 
    public static void main(String[] args) throws Exception {
 
-      //Create blank workbook
+      
       XSSFWorkbook workbook = new XSSFWorkbook();
       
       //Create a blank sheet
