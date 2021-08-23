@@ -18,33 +18,27 @@ public class WriteDataToExcel {
       
       XSSFWorkbook workbook = new XSSFWorkbook();
       
-      //Create a blank sheet
+      
       XSSFSheet spreadsheet = workbook.createSheet( " Employee Info ");
 
-      //Create row object
+ 
       XSSFRow row;
 
-      //This data needs to be written (Object[])
+      
       Map < String, Object[] > empinfo = new TreeMap < String, Object[] >();
-      empinfo.put( "1", new Object[] {
-         "Id", "Name", "Runs","Balls","Boundaries" });
+      empinfo.put( "1", new Object[] { "Id", "Name", "Runs","Balls","Boundaries" });
       
-      empinfo.put( "2", new Object[] {
-         "1","RohitSharma", "56", "63","5" });
+      empinfo.put( "2", new Object[] {  "1","RohitSharma", "56", "63","5" });
       
-      empinfo.put( "3", new Object[] {
-    		  "2","ViratKohli", "122", "103","14"  });
+      empinfo.put( "3", new Object[] {  "2","ViratKohli", "122", "103","14"  });
       
-      empinfo.put( "4", new Object[] {
-    		  "3","JosButtler", "42", "89","3"  });
+      empinfo.put( "4", new Object[] {  "3","JosButtler", "42", "89","3"  });
       
-      empinfo.put( "5", new Object[] {
-    		  "4","DavidWarner", "58", "76","6"  });
+      empinfo.put( "5", new Object[] { "4","DavidWarner", "58", "76","6"  });
       
-      empinfo.put( "6", new Object[] {
-         "5","Williamson", "84", "91","9" });
+      empinfo.put( "6", new Object[] { "5","Williamson", "84", "91","9" });
 
-      //Iterate over data and write to sheet
+ 
       Set < String > keyid = empinfo.keySet();
       int rowid = 0;
       
@@ -58,7 +52,7 @@ public class WriteDataToExcel {
             cell.setCellValue((String)obj);
          }
       }
-      //Write the workbook in file system
+     
       FileOutputStream out = new FileOutputStream(
          new File("C:\\Users\\sunil\\Downloads\\CricketScore.xlsx"));
       
