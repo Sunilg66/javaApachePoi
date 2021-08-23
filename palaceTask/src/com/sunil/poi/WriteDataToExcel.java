@@ -19,7 +19,7 @@ public class WriteDataToExcel {
       XSSFWorkbook workbook = new XSSFWorkbook();
       
       
-      XSSFSheet spreadsheet = workbook.createSheet( " Employee Info ");
+      XSSFSheet spreadsheet = workbook.createSheet( " Score Sheet ");
 
  
       XSSFRow row;
