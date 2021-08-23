@@ -24,15 +24,7 @@ public class PalaceTester {
 				Iterator<Cell> cellIterator = row.cellIterator();
 				while (cellIterator.hasNext()) {
 					Cell cell = cellIterator.next();
-					switch (cell.getCellType()) {
-					case Cell.CELL_TYPE_STRING:
-						System.out.print(cell.getStringCellValue() + "\t\t\t");
-						break;
-					case Cell.CELL_TYPE_NUMERIC:
-						System.out.print(cell.getNumericCellValue() + "\t\t\t");
-						break;
-					default:
-					}
+					System.out.println(cell.toString());
 				}
 				System.out.println("");
 			}
